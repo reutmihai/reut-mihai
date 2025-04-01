@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "homepage": "https://reutmihai.github.io/React-Vite-Typescript-Tailwind"
+    "homepage": "https://reutmihai.github.io/reut-mihai"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.9",
