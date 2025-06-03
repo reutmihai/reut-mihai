@@ -5,7 +5,7 @@ export const Homepage: React.FC = () => {
     <main className="flex flex-row gap-20 place-content-around my-50">
       <div className="flex flex-col items-center rounded-lg shadow-lg p-10 bg-[var(--color-primary)]">
       <div className="typewriter">
-        <h1 className="typewriter">Hi there! I'm Reut Mihai</h1>
+        <h1 className="typewriter">Hi there! I'm <span className="text-[var(--color-purple)]">Reuț Mihai</span>. </h1>
       </div>
         <h2 className="text-[var(--color-gray)]">Frontend Web Developer</h2>
         <p>
@@ -23,8 +23,8 @@ export const Homepage: React.FC = () => {
         </div>
       </div>
       <div className="card">
-        <h2 className="mb-3 text-white">My Skills</h2>
-        <ul className="flex flex-col">
+        <h2 className="mb-3 text-[var(--color-purple)] ">My Skills</h2>
+        <ul className="skills">
           <li>HTML5 & CSS</li>
           <li>JAVASCRIPT</li>
           <li>REACT</li>
