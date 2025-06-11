@@ -4,8 +4,10 @@ import router from './routes';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="relative min-h-screen text-white">
+      <main className="relative z-10">
       <RouterProvider router={router} /> 
+      </main>
     </div>
   );
 };
