@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex items-center justify-center p-10 bg-[var(--color-primary)]">
+    <div className="flex items-center justify-center p-10 bg-[var(--color-purple)]">
       <div className="container mx-auto flex justify-center gap-6">
         {/* Facebook */}
         <a
@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
-          className="hover:scale-110 transition-transform duration-200"
+          className="icons hover:scale-110 transition-transform duration-200"
         >
           <svg
             width="30"
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
-          className="hover:scale-110 transition-transform duration-200"
+          className="icons hover:scale-110 transition-transform duration-200"
         >
           <svg
             width="30"
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
-          className="hover:scale-110 transition-transform duration-200"
+          className="icons hover:scale-110 transition-transform duration-200"
         >
           <svg
             width="30"
@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedLn"
-          className="hover:scale-110 transition-transform duration-200"
+          className="icons hover:scale-110 transition-transform duration-200"
         >
           <svg
             width="30"
