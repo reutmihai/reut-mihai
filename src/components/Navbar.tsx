@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   return (
-    <div className="flex justify-center items-center mt-3 border-b-[1px] border-[var(--color-purple)]">
-    <nav className="bg-transparent py-3 px-15 flex justify-center items-center gap-10">
+    <div className="flex justify-center items-center mt-3">
+    <nav className="py-3 px-15 flex justify-center items-center gap-10 border-b-[2px] border-[var(--color-purple)]">
       <NavLink 
         to="/" 
         className={({ isActive }) => (isActive ? "active" : "")}
