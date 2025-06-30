@@ -6,6 +6,21 @@ body {
   overflow-x: hidden;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
+}
+
 :root {
   --color-primary: #043e1d67;
   --color-secondary: #29b34b2c;
@@ -56,7 +71,7 @@ li {
 
 @layer components {
   .card {
-    /* background-color: var(--color-primary); */
+    background-color: var(--color-primary);
     color: var(--color-cream);
     padding: 1.5rem 4rem;
     border-radius: 0.5rem;
