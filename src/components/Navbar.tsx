@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
         Projects
       </NavLink>
       <NavLink 
-        to="/projects" 
+        to="/about" 
         className={({ isActive }) => (isActive ? "active" : "")}
       >
         About Me
