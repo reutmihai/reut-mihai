@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../index.css';
 
 const Navbar: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ const Navbar: React.FC = () => {
         to="/about" 
         className={({ isActive }) => (isActive ? "active" : "")}
       >
-        About Me
+        About
       </NavLink>
     </nav>
     </div>
