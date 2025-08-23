@@ -30,7 +30,7 @@ const ProjectsPage: React.FC = () => {
           R2 storage for images.
         </p>
 
-        <a href="https://github.com/reutmihai/Bil-Pave-App">
+        <a href="https://github.com/reutmihai/Bil-Pave-App" target="_blank" rel="noopener noreferrer">
         <strong>&gt; Click here for github project </strong>
         </a>
       </div>
@@ -51,7 +51,7 @@ const ProjectsPage: React.FC = () => {
           &gt; I contributed to the frontend, implementing React components,
           state management with Redux, and API integrations.
         </p>
-        <a href="https://github.com/reutmihai/Money-Guard">
+        <a href="https://github.com/reutmihai/Money-Guard" target="_blank" rel="noopener noreferrer"> 
           <strong>&gt; Click here for github project </strong>
         </a>
       </div>
@@ -71,7 +71,7 @@ const ProjectsPage: React.FC = () => {
           &gt; Built with React, TypeScript, and Tailwind, the app emphasizes
           clean UI and efficient state management.
         </p>
-        <a href="">
+        <a href="https://github.com/reutmihai/Health-App" target="_blank" rel="noopener noreferrer">
           <strong> &gt; Click here for github project </strong>
         </a>
       </div>

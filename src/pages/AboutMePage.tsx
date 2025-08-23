@@ -33,13 +33,14 @@ export const AboutMePage: React.FC = () => {
         <div className="mt-5">
           <h2 className="text-2xl font-semibold mb-3">Skills & Tools:</h2>
           <ul className="grid grid-cols-2 gap-2 text-lg">
+            <li>JavaScript</li>
             <li>React</li>
             <li>TypeScript</li>
-            <li>Tailwind CSS</li>
-            <li>JavaScript</li>
-            <li>HTML & CSS</li>
-            <li>Node.js</li>
             <li>Git & GitHub</li>
+            <li>HTML & CSS</li>
+            <li>Tailwind CSS</li>
+            <li>Material UI</li>
+            <li>Cloudflare</li>
           </ul>
         </div>
       </div>
