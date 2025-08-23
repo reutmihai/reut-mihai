@@ -3,7 +3,7 @@ import React from "react";
 export const Homepage: React.FC = () => {
   return (
     <main className="flex flex-row gap-20 place-content-around my-50">
-      <div className="card flex flex-col items-center justify-center border-[2px] border-[var(--color-purple)] p-10">
+      <div className="card flex flex-col items-center justify-center background-color-red p-10">
         <div className="typewriter">
           <h1 className="typewriter">
             Hi there! I'm{" "}
@@ -17,11 +17,19 @@ export const Homepage: React.FC = () => {
           Focused on performance and user-friendly solutions.
         </p>
         <div className="flex flex-row  gap-3 items-center justify-center mt-10">
-          <button className="btn">My Resume</button>
-          <button className="btn">My Projects</button>
+        <a
+  href="/reut_mihai_cv.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="border-[1px] text-[var(--color-purple)] px-4 py-2 rounded"
+>
+  My Resume
+</a>
+          <button className="btn"
+          onClick={() => window.open("/projects")}>My Projects</button>
         </div>
       </div>
-      <div className="card flex flex-col items-center justify-center border-[2px] border-[var(--color-purple)] p-10">
+      <div className="card flex flex-col items-center justify-center p-10">
         <h2 className="mb-3 text-[var(--color-purple)] ">MY SKILLS</h2>
         <ul className="skills">
           <li>HTML5 & CSS</li>

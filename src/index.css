@@ -91,12 +91,13 @@ li {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #a082829d;
+    background-color: #5250507e;
     cursor: pointer;
     transition: border-color 0.25s;
   }
   button:hover {
     border-color: #646cff;
+    color: var(--color-purple);
   }
   button:focus,
   button:focus-visible {
