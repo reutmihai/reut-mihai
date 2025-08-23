@@ -1,7 +1,5 @@
-import { useNavigate } from "react-router-dom";
 
 export const AboutMePage: React.FC = () => {
-  const navigate = useNavigate();
   return (
     <main className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
       {/* Text */}
