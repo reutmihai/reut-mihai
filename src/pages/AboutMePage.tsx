@@ -24,11 +24,15 @@ export const AboutMePage: React.FC = () => {
         </p>
 
         <a
-          href="/projects"
-          className="text-lg underline underline-offset-1"
+          href="/certificate_goit.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          My Projects
+          &gt; Click to see the Certificate
         </a>
+        <br />
+
+        <a href="/projects">&gt; Click to see My Projects</a>
 
         <div className="mt-5">
           <h2 className="text-2xl font-semibold mb-3">Skills & Tools:</h2>
