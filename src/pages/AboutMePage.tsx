@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export const AboutMePage: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <main className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
       {/* Text */}
@@ -24,7 +27,7 @@ export const AboutMePage: React.FC = () => {
         </p>
 
         <a
-          href="/certificate_goit.pdf"
+          href="documents/certificate_goit.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,7 +35,7 @@ export const AboutMePage: React.FC = () => {
         </a>
         <br />
 
-        <a href="/projects">&gt; Click to see My Projects</a>
+        <a  href={`${import.meta.env.BASE_URL}projects`}>&gt; Click to see My Projects</a>
 
         <div className="mt-5">
           <h2 className="text-2xl font-semibold mb-3">Skills & Tools:</h2>
@@ -52,7 +55,7 @@ export const AboutMePage: React.FC = () => {
       {/* Poză */}
       <div className="flex justify-center">
         <img
-          src="profile.jpg"
+           src={`${import.meta.env.BASE_URL}images/profile.jpg`}
           alt="Mihai - Web Developer"
           className="w-[400px] h-[550px] object-cover rounded-2xl shadow-lg"
         />
