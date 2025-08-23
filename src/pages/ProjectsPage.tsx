@@ -11,8 +11,22 @@ const ProjectsPage: React.FC = () => {
         Here you will find a collection of my projects that showcase my skills
         and creativity in web development.
       </p>
-      <div className="my-8 flex flex-col gap-3 border border-[var(--color-purple)]  p-15">
+      <div className="my-8 flex flex-col gap-3 border-y-[2px] border-[var(--color-purple)]  p-15">
         <h2>BPS PAVING APP - INDIVIDUAL REAL PROJECT</h2>
+        <a
+          href="https://www.bps-paving.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>&gt; Click here to see the live project </strong>
+        </a>
+        <a
+          href="https://github.com/reutmihai/Bil-Pave-App"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>&gt; Click here for github project </strong>
+        </a>
 
         <div className="mt-10 mb-10">
           <img
@@ -30,17 +44,16 @@ const ProjectsPage: React.FC = () => {
           optimized it for SEO and performance, and hosted it on Cloudflare with
           R2 storage for images.
         </p>
-
+      </div>
+      <div className="my-8 flex flex-col gap-3 border-y-[2px] border-[var(--color-purple)] p-15">
+        <h2>HEALTH APP - INDIVIDUAL PROJECT</h2>
         <a
-          href="https://github.com/reutmihai/Bil-Pave-App"
+          href="https://github.com/reutmihai/Health-App"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <strong>&gt; Click here for github project </strong>
+          <strong> &gt; Click here for github project </strong>
         </a>
-      </div>
-      <div className="my-8 flex flex-col gap-3 border border-[var(--color-purple)] p-15">
-        <h2>HEALTH APP - INDIVIDUAL PROJECT</h2>
         <div className="mt-10 mb-10">
           <img
             src={healthAppProjectImg}
@@ -55,16 +68,16 @@ const ProjectsPage: React.FC = () => {
           &gt; Built with React, TypeScript, and Tailwind, the app emphasizes
           clean UI and efficient state management.
         </p>
+      </div>
+      <div className="my-8 flex flex-col gap-3 border-y-[2px] border-[var(--color-purple)] p-15">
+        <h2>MONEY GUARD - TEAM PROJECT</h2>
         <a
-          href="https://github.com/reutmihai/Health-App"
+          href="https://github.com/reutmihai/Money-Guard"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <strong> &gt; Click here for github project </strong>
+          <strong>&gt; Click here for github project </strong>
         </a>
-      </div>
-      <div className="my-8 flex flex-col gap-3 border border-[var(--color-purple)] p-15">
-        <h2>MONEY GUARD - TEAM PROJECT</h2>
         <div className="mt-10 mb-10">
           <img
             src={moneyGuardProjectImg}
@@ -80,13 +93,6 @@ const ProjectsPage: React.FC = () => {
           &gt; I contributed to the frontend, implementing React components,
           state management with Redux, and API integrations.
         </p>
-        <a
-          href="https://github.com/reutmihai/Money-Guard"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <strong>&gt; Click here for github project </strong>
-        </a>
       </div>
     </main>
   );
