@@ -2,7 +2,7 @@ import React from "react";
 
 export const Homepage: React.FC = () => {
   return (
-    <main className="flex flex-row gap-20 h-screen place-content-around my-10">
+    <main className="max-w-6xl mx-auto px-6 py-16 flex flex-row gap-20 h-screen place-content-around my-10">
       <div className="card flex flex-col items-center justify-center">
         <div className="typewriter">
           <h1 className="typewriter">
@@ -30,7 +30,7 @@ export const Homepage: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
         <img
           src="homepage-profile.jpg"
           alt="Mihai - Web Developer"
