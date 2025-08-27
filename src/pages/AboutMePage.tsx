@@ -1,7 +1,14 @@
-
 export const AboutMePage: React.FC = () => {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+    <main className="sm:flex sm:flex-col max-w-6xl mx-auto px-6 py-16 grid sm:grid-cols-2 gap-12">
+      {/* Poză */}
+      <div>
+        <img
+          src={`${import.meta.env.BASE_URL}images/profile.jpg`}
+          alt="Mihai - Web Developer"
+          className="w-auto h-[300px] object-cover rounded-2xl shadow-lg sm:w-auto sm:h-[400px] sm:ml-5"
+        />
+      </div>
       {/* Text */}
       <div className="space-y-6">
         <h1 className="text-4xl font-inria font-bold">Meet The Developer</h1>
@@ -33,7 +40,9 @@ export const AboutMePage: React.FC = () => {
         </a>
         <br />
 
-        <a  href={`${import.meta.env.BASE_URL}projects`}>&gt; Click to see My Projects</a>
+        <a href={`${import.meta.env.BASE_URL}projects`}>
+          &gt; Click to see My Projects
+        </a>
 
         <div className="mt-5">
           <h2 className="text-2xl font-semibold mb-3">Skills & Tools:</h2>
@@ -48,15 +57,6 @@ export const AboutMePage: React.FC = () => {
             <li>Cloudflare</li>
           </ul>
         </div>
-      </div>
-
-      {/* Poză */}
-      <div className="flex justify-center">
-        <img
-           src={`${import.meta.env.BASE_URL}images/profile.jpg`}
-          alt="Mihai - Web Developer"
-          className="w-[400px] h-[550px] object-cover rounded-2xl shadow-lg"
-        />
       </div>
     </main>
   );
