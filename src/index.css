@@ -79,7 +79,7 @@ li {
   .card {
     background-color: transparent;
     color: var(--color-cream);
-    padding: 1.5rem 4rem;
+    padding: 1rem 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
@@ -123,17 +123,22 @@ li {
   }
 }
 
-.typewriter h1 {
+.typewriter h1{
   color: #fff;
   overflow: hidden;
   border-right: 1px solid #fff;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.03em;
-  animation: typing 2.5s steps(30, end) forwards,
-    blink-caret 0.6s step-end 4 forwards;
-  animation-fill-mode: forwards;
 }
+
+@media (min-width: 640px) {
+  .typewriter {
+    animation: typing 2.5s steps(30, end) forwards,
+               blink-caret 0.6s step-end 4 forwards;
+  }
+}
+
 
 /* The typing effect */
 @keyframes typing {
@@ -153,5 +158,39 @@ li {
   }
   50% {
     border-color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width: 640px) {
+
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .typewriter h1 {
+    white-space: normal;
+    border-right: none; 
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.3em 0.4em;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: inherit;
+    background-color: #5250507e;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+
+  a {
+    font-size: 14px;
   }
 }
