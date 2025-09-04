@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../index.css";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="flex justify-center items-center mt-3">
-      <nav className="hidden sm:py-3 sm:px-15 sm:flex sm:justify-center sm:items-center sm:gap-10 sm:border-b-[2px] sm:border-[var(--color-purple)]">
+      {/* Desktop Navbar */}
+      <nav className="hidden sm:flex sm:py-3 sm:px-15 sm:justify-center sm:items-center sm:gap-10 sm:border-b-[2px] sm:border-[var(--color-purple)]">
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
@@ -28,27 +29,49 @@ const Navbar: React.FC = () => {
           About
         </NavLink>
       </nav>
+
+      {/* Mobile Menu Button */}
       <button
-        className="md:hidden fixed top-5 right-5"
+        className="sm:hidden fixed top-5 right-5 z-50"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <X size={28} /> : <Menu size={28} />}
+        {isOpen ? <X size={32} /> : <Menu size={32} />}
       </button>
 
-      {/* Mobile menu */}
-      {isOpen && (
-        <div className="md:hidden flex fixed top-1 left-2  z-index-1000 items-center bg-[var(--color-purple)] gap-15 py-5 px-5 rounded-lg shadow-md border-2 border-[var(--color-white)]">
-          <NavLink to="/" onClick={() => setIsOpen(false)}>
-            Home
-          </NavLink>
-          <NavLink to="/projects" onClick={() => setIsOpen(false)}>
-            Projects
-          </NavLink>
-          <NavLink to="/about" onClick={() => setIsOpen(false)}>
-            About
-          </NavLink>
-        </div>
-      )}
+      {/* Mobile Fullscreen Menu */}
+      <div
+        className={`sm:hidden fixed inset-0 bg-[var(--color-purple)] text-white flex flex-col items-center justify-center gap-10 text-2xl transform transition-transform duration-300 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <NavLink
+          to="/"
+          onClick={() => setIsOpen(false)}
+          className={({ isActive }) =>
+            isActive ? "font-bold underline" : "hover:opacity-80"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/projects"
+          onClick={() => setIsOpen(false)}
+          className={({ isActive }) =>
+            isActive ? "font-bold underline" : "hover:opacity-80"
+          }
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          to="/about"
+          onClick={() => setIsOpen(false)}
+          className={({ isActive }) =>
+            isActive ? "font-bold underline" : "hover:opacity-80"
+          }
+        >
+          About
+        </NavLink>
+      </div>
     </div>
   );
 };
