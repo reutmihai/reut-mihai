@@ -55,6 +55,7 @@ export const AboutMePage: React.FC = () => {
             <li>Tailwind CSS</li>
             <li>Material UI</li>
             <li>Cloudflare</li>
+            <li>Figma</li>
           </ul>
         </div>
       </div>
