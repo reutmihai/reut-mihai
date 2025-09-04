@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export const Homepage: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <main className="px-3 my-15 flex flex-col-reverse  sm:min-h-screen sm:max-w-6xl sm:mx-auto sm:flex-row sm:items-center sm:justify-between ">
+    <main className="px-3 my-15 flex flex-col-reverse  sm:min-h-screen sm:max-w-6xl sm:mx-auto sm:flex-row sm:items-center sm:justify-between sm:my-5">
       <div className="card flex flex-col items-center justify-center">
         <div className="typewriter">
           <h1 className="typewriter">
