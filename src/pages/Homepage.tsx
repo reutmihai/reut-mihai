@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export const Homepage: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <main className="px-3 my-15 flex flex-col-reverse  sm:min-h-screen sm:max-w-6xl sm:mx-auto sm:flex-row sm:items-center sm:justify-between sm:my-5">
+    <main className="px-3 my-15 flex flex-col-reverse  sm:min-h-screen sm:max-w-6xl sm:mx-auto sm:flex-row sm:items-center sm:justify-between sm:my-0">
       <div className="card flex flex-col items-center justify-center">
         <div className="typewriter">
           <h1 className="typewriter">
@@ -34,7 +34,7 @@ export const Homepage: React.FC = () => {
         <img
           src={`${import.meta.env.BASE_URL}images/profile_home.jpg`}
           alt="Mihai - Web Developer"
-          className="w-[200px] h-auto md:w-[300px] h-[500px] object-cover rounded-xl shadow-lg border border-gray-300 transition-transform duration-500 ease-in-out hover:scale-105"
+          className="w-[200px] h-auto object-cover rounded-xl shadow-lg border border-gray-300 transition-transform duration-500 ease-in-out hover:scale-105"
         />
       </div>
     </main>
