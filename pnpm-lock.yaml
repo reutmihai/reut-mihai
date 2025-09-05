@@ -26,6 +26,9 @@ importers:
       react-router-dom:
         specifier: ^7.5.3
         version: 7.5.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-vite-ts-tailwind:
+        specifier: 'link:'
+        version: 'link:'
     devDependencies:
       '@eslint/js':
         specifier: ^9.21.0
