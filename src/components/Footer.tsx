@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex justify-center gap-6">
         {/* Facebook */}
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/reut.mihai/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
 
         {/* Instagram */}
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/reut.mihai/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
 
         {/* WhatsApp */}
         <a
-          href="https://wa.me/40700000000"
+          href="https://wa.me/40785972259"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
 
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/"
+          href="www.linkedin.com/in/mihai-reut"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedLn"
