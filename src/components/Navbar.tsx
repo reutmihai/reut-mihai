@@ -17,10 +17,16 @@ const Navbar: React.FC = () => {
           Home
         </NavLink>
         <NavLink
-          to="/projects"
+          to="/web-dev-projects"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          Projects
+          Web Dev Projects
+        </NavLink>
+        <NavLink
+          to="/qa-projects"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          QA Projects
         </NavLink>
         <NavLink
           to="/about"
