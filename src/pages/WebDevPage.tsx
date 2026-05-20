@@ -3,7 +3,7 @@ import bpsProjectImg from "../assets/projects/bps-project.png";
 import moneyGuardProjectImg from "../assets/projects/money-guard-project.png";
 import healthAppProjectImg from "../assets/projects/health-app-project.png";
 
-const ProjectsPage: React.FC = () => {
+const WebDevPage: React.FC = () => {
   return (
     <main className="flex flex-col max-w-6xl mx-auto px-6 py-16">
       <h1 className="text-4xl font-bold">Projects</h1>
@@ -98,4 +98,4 @@ const ProjectsPage: React.FC = () => {
   );
 };
 
-export default ProjectsPage;
+export default WebDevPage;
