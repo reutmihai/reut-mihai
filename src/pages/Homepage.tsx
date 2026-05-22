@@ -23,7 +23,7 @@ export const Homepage: React.FC = () => {
         </p>
         <div className="flex flex-row  gap-3 items-center justify-center mt-10">
           <a
-            href={`${import.meta.env.BASE_URL}documents/reut_mihai_cv.pdf`}
+            href={`${import.meta.env.BASE_URL}documents/mihai_reut_cv.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-1 py-1 border-[1px] text-[var(--color-purple)] sm:px-4 sm:py-2 rounded"
